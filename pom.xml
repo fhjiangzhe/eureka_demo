@@ -70,9 +70,6 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <executable>true</executable>
-                    <profiles>
-                        <profile>local</profile>
-                    </profiles>
                 </configuration>
             </plugin>
         </plugins>
