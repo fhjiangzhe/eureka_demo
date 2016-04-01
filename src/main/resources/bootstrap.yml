@@ -4,3 +4,10 @@ server:
 spring:
   application:
     name: olymtech-eureka
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
