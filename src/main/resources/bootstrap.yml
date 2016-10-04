@@ -2,12 +2,8 @@ server:
   port: 8761
 
 spring:
-  application:
-    name: olymtech-eureka
-
-eureka:
-  client:
-    registerWithEureka: false
-    fetchRegistry: false
-  server:
-    waitTimeInMsWhenSyncEmpty: 0
+  cloud:
+    config:
+      name: olymtech-eureka
+      uri: http://127.0.0.1:8888
+      profile: ${config.profile:dev}
